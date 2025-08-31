@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Task Tracker — Vanilla JS (DOM + Events)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app" role="application" aria-label="Task Tracker">
+        <h1>Task Tracker</h1>
+    <p class="sub">CRUD with <strong>vanillea JavaScript</strong> :arrays, DOM, events.</p>
+    <!-- STEP 1: form (we'll handle submission via addEventListener and PreventDefault) -->
+    <form id="todo-form" autocomplete="off">
+        <input id="todo-input" name="task" type="text" placeholder="Add a new task..." required minlength="1"/>
+        <button type="submit" class="primary">Add Task</button>
+    </form>
+    <div class="row">
+        <p class="muted">pending: <span id="count">0</span></p>
+        <p class="muted" id ="status" aria-live="polite"></p>
+
+    </div>
+    <!-- STEP 2: -->
+
+    <ul id="todo-list" aria-live="polite"></ul>
+    <p class="empty" id="empty-state">No tasks yet - add your first one above. </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
