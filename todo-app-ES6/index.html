@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width,  initial-scale=1">
+  <title>Task Tracker - Vanilla JS </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <h1>Task Tracker</h1>
+  <p class="sub">CRUD with <strong>vanilla Javascript</strong>: arrays, DOM, Events.</p>
+  <!-- hundle submit via addEventListener and preventDefault -->
+  <form id="todo-form" autocomplete="off" novalidate >
+    <input id="todo-input" type="text" placeholder="Add a new Task" required minlength="1">
+    <button type="submit" class="primary">Add Task</button>
+  </form>
+  <div class="row">
+    <p class="muted">pending : <span id="count">0</span></p>
+    <p class="muted" id="status"></p>
+  </div>
+  <!-- Rendered List -->
+  <ul id="todo-list"></ul>
+  <p class="empty" id="empty-state">No task yet - add your first one above.</p>
+</div>
+
+<!-- Load entry point as ES6 module -->
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
